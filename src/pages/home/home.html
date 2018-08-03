@@ -1,14 +1,23 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
-
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content>
+  <!-- Navigation Box -->
+  <div *ngIf="showMap && showDirection" class="container">
+    <!-- Search box Info -->
+    <div class="search-box">
+      <img (click)="stopDirection()" style="margin-top: 5%;margin-left: 1%;" height="15px" src="./assets/icon/left-arrow.svg">
+      <!-- Source and Destination -->
+      <div class="info">
+        <img height="38px" src="./assets/icon/ic_directions_trail.png">
+        <div>
+          <p class="source">{{ direction['source'] }}</p>
+          <p class="destination">{{ direction['destination'] }}</p>
+        </div>
+      </div>
+    </div>
+    <p class="time">
+      <img height="20px" src="./assets/icon/walk.svg">
+      <span>{{ direction['time'] | requiredtime }}</span>
+    </p>
+  </div>
+  <div *ngIf="showMap" id="mapwize" class="mapwize"></div>
+  <img (click)="getDirection()" *ngIf="showMap && !showDirection" class="direction" height="15px" src="./assets/icon/direction.svg">
 </ion-content>

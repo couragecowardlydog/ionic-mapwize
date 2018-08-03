@@ -1,0 +1,36 @@
+page-directions {
+  .placeholder-text {
+    color: #FFFFFF;
+    font-size: 1.2em;
+  }
+
+  .container {
+    width: 100%;
+    background: #4285f4 !important;
+
+    .search {
+      width: 88%;
+      background: #4285f4 !important;
+      color: white;
+
+      input {
+        width: 80%;
+        font-weight: 100;
+        font-size: 13px;
+      }
+    }
+  }
+
+  .place-list {
+    height: 80%;
+    overflow: auto;
+  }
+
+  .switch {
+    position: absolute;
+    height: 25px;
+    top: 5%;
+    z-index: 99;
+    right: 2%;
+  }
+}

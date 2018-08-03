@@ -1,3 +1,60 @@
 page-home {
+  .mapwize {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+  }
 
+  .direction {
+    z-index: 99999;
+    position: absolute;
+    bottom: 30px;
+    left: 29px;
+    height: 33px;
+  }
+
+  .container {
+    width: 100%;
+    background: #4285f4 !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    padding: 10px;
+
+    .time {
+      color: white;
+      margin: 14px 0px 0px 13%;
+    }
+
+    .search-box {
+      display: flex;
+      width: 100%;
+
+      .info {
+        display: flex;
+        margin: 0 30px;
+        background: #5e97f6;
+        padding: 5px 21px 5px 6px;
+        width: 80%;
+        color: white;
+
+        .source {
+          font-size: 12px;
+        }
+
+        .destination {
+          font-size: 17px;
+        }
+
+        p {
+          margin: 0;
+        }
+      }
+
+    }
+
+  }
 }

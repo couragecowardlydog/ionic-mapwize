@@ -1,0 +1,22 @@
+<ion-content>
+  <div class="container">
+    <ion-item class="search">
+      <ion-input [disabled] (focus)="setStartFocus()" value="{{ direction['start']['name'] }}" (onfocus)="onInputFocus()" #start
+        type="text" placeholder="Choose starting point"></ion-input>
+    </ion-item>
+    <ion-item class="search">
+      <ion-input [disabled] (focus)="setDestinationFocus()" value="{{ direction['destination']['name'] }}" #destinaton type="text"
+        placeholder="Choose Destination"></ion-input>
+    </ion-item>
+  </div>
+
+  <ion-list class="place-list">
+    <ion-item (click)="onSelectPlace(place)" *ngFor="let place of places">
+      <ion-icon item-left>
+        <img height="25px" src="{{ place['venue']['icon'] }}">
+      </ion-icon>
+      <ion-label>{{ place['name'] }}</ion-label>
+    </ion-item>
+  </ion-list>
+  <img (click)="switch()" class="switch" src="./assets/icon/up_down.svg">
+</ion-content>
