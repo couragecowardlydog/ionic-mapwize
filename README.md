@@ -1,4 +1,4 @@
-# ionic-mapwize
+# Mapwize - Ionic Implementation
 
 
 Mapwize Venue View             |  List of Places in Venue
