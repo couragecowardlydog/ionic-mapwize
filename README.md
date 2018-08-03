@@ -1,7 +1,7 @@
 # ionic-mapwize
 
 
-Solarized dark             |  Solarized Ocean
+Mapwize Venue View             |  Solarized Ocean
 :-------------------------:|:-------------------------:
 ![](https://github.com/VivekanandanS/ionic-mapwize/blob/master/src/assets/imgs/image2.png)  |  ![](https://github.com/VivekanandanS/ionic-mapwize/blob/master/src/assets/imgs/image1.png)
 
